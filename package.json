@@ -4,8 +4,11 @@
   "description": "Chainable utility functions for Javascript Iterators",
   "main": "index.js",
   "scripts": {
-    "test": "babel-node mocha test"
+    "test": "npm run-script eslint && npm run-script mocha",
+    "mocha": "mocha --compilers js:babel-core/register --recursive test",
+    "eslint": "eslint ."
   },
+  "repository": "Volune/iterator-makeup",
   "keywords": [
     "javascript",
     "iterator",

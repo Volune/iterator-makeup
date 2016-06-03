@@ -6,11 +6,14 @@ const noop = () => true;
 describe('forEach', () => {
   it('consumer receives arguments (value, key, iterable)', () => {
     const array = ['A'];
+    let called = false;
     array::forEach((value, key, iterable) => {
+      called = true;
       expect(value).to.equal(array[0]);
       expect(key).to.equal(0);
       expect(iterable).to.equal(array);
     });
+    expect(called).to.be.true();
   });
 
   it('returns undefined', () => {

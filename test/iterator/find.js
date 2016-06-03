@@ -6,11 +6,14 @@ const hasNumbers = value => /\d+/.test(value);
 describe('find', () => {
   it('predicate receives arguments (value, key, iterable)', () => {
     const array = ['A'];
+    let called = false;
     array::find((value, key, iterable) => {
+      called = true;
       expect(value).to.equal(array[0]);
       expect(key).to.equal(0);
       expect(iterable).to.equal(array);
     });
+    expect(called).to.be.true();
   });
 
   it('returns expected value', () => {

@@ -26,14 +26,7 @@
     "eslint-config-airbnb-base": "^3.0.1",
     "eslint-plugin-import": "^1.8.1",
     "mocha": "^2.5.3",
-    "must": "^0.13.1"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ],
-    "plugins": [
-      "transform-function-bind"
-    ]
+    "must": "^0.13.1",
+    "regenerator-runtime": "^0.9.5"
   }
 }

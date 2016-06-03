@@ -1,7 +1,6 @@
 import expect from 'must';
 import forEach from '../../lib/iterator/forEach';
-
-const noop = () => true;
+import { returnTrue } from '../helpers';
 
 describe('forEach', () => {
   it('consumer receives arguments (value, key, iterable)', () => {
@@ -18,10 +17,10 @@ describe('forEach', () => {
 
   it('returns undefined', () => {
     const array1 = ['A', '1', 'B'];
-    const result1 = array1::forEach(noop);
+    const result1 = array1::forEach(returnTrue);
     expect(result1).to.be.undefined();
     const array2 = [];
-    const result2 = array2::forEach(noop);
+    const result2 = array2::forEach(returnTrue);
     expect(result2).to.be.undefined();
   });
 

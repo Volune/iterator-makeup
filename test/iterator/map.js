@@ -1,8 +1,7 @@
 import expect from 'must';
 import map from '../../lib/iterator/map';
+import { consume, returnTrue } from '../helpers';
 
-const consume = iterator => [...iterator];
-const returnTrue = () => true;
 const toLowerCase = value => value.toLowerCase();
 
 describe('map', () => {

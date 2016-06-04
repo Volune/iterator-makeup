@@ -1,4 +1,5 @@
 import expect from 'must';
+import isIterableButNotString from '../lib/helpers/isIterableButNotString';
 
 export const consume = iterable => [...iterable];
 export const returnTrue = () => true;
@@ -26,7 +27,7 @@ export function shouldPassUsualArgumentsTo(name) {
       expect(key).to.equal(0);
       expect(iterable).to.equal(array);
     });
-    if (result && Symbol.iterator in result) {
+    if (isIterableButNotString(result)) {
       consume(result);
     }
     expect(called).to.be.true();
@@ -38,6 +39,6 @@ export function shouldReturnIterable() {
   it('returns iterable', () => {
     const array = ['A', '1', 'B'];
     const result = array::func(returnTrue);
-    expect(Symbol.iterator in result).to.be.true();
+    expect(isIterableButNotString(result)).to.be.true();
   });
 }

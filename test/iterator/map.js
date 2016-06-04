@@ -1,37 +1,18 @@
 import expect from 'must';
 import map from '../../lib/iterator/map';
-import { consume, returnTrue } from '../helpers';
+import {
+  returnTrue,
+  shouldNotCall,
+  shouldPassUsualArgumentsTo,
+  shouldReturnIterable,
+} from '../helpers';
 
 const toLowerCase = value => value.toLowerCase();
 
 describe('map', () => {
-  it('doesn\'t call operator if not consumed', () => {
-    const array = ['A'];
-    let called = false;
-    array::map(() => {
-      called = true;
-    });
-    expect(called).to.be.false();
-  });
-
-  it('operator receives arguments (value, key, iterable)', () => {
-    const array = ['A'];
-    let called = false;
-    const iterator = array::map((value, key, iterable) => {
-      called = true;
-      expect(value).to.equal(array[0]);
-      expect(key).to.equal(0);
-      expect(iterable).to.equal(array);
-    });
-    consume(iterator);
-    expect(called).to.be.true();
-  });
-
-  it('returns iterable', () => {
-    const array = ['A', '1', 'B'];
-    const result = array::map(returnTrue);
-    expect(Symbol.iterator in result).to.be.true();
-  });
+  map::shouldNotCall('operator');
+  map::shouldPassUsualArgumentsTo('operator');
+  map::shouldReturnIterable();
 
   it('returns expected number of values', () => {
     const array1 = ['A', 'B', 'C'];

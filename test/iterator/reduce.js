@@ -6,7 +6,7 @@ const RETURNED_VALUE = 'RETURNED_VALUE';
 const returnValue = () => RETURNED_VALUE;
 
 describe('reduce', () => {
-  it('operator receives arguments (memo, value, key, iterable)', () => {
+  it('passes arguments (memo, value, key, iterable) to operator', () => {
     const array = ['A'];
     let called = false;
     array::reduce((memo, value, key, iterable) => {

@@ -4,7 +4,7 @@ import {
   shouldReturnIterable,
 } from '../helpers';
 
-describe('filter', () => {
+describe('flatten', () => {
   flatten::shouldReturnIterable();
 
   it('returns expected from [1, [2, [3, 4]]]', () => {

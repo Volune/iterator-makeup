@@ -4,7 +4,7 @@ import {
   shouldReturnIterable,
 } from '../helpers';
 
-describe('filter', () => {
+describe('drop', () => {
   drop::shouldReturnIterable();
 
   it('returns all values except first', () => {

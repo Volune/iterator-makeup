@@ -4,7 +4,7 @@ import {
   shouldReturnIterable,
 } from '../helpers';
 
-describe('filter', () => {
+describe('take', () => {
   take::shouldReturnIterable();
 
   it('returns first value', () => {

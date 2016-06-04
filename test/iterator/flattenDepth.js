@@ -4,7 +4,7 @@ import {
   shouldReturnIterable,
 } from '../helpers';
 
-describe('filter', () => {
+describe('flattenDepth', () => {
   flattenDepth::shouldReturnIterable();
 
   it('returns expected from [1, [2, [3, [4, 5]]], depth = -1', () => {

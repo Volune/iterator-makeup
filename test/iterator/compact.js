@@ -4,7 +4,7 @@ import {
   shouldReturnIterable,
 } from '../helpers';
 
-describe('filter', () => {
+describe('compact', () => {
   compact::shouldReturnIterable();
 
   it('returns expected values [A,B]', () => {

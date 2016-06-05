@@ -1,6 +1,6 @@
 {
   "name": "iterator-makeup",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Chainable utility functions for Javascript Iterators",
   "main": "index.js",
   "scripts": {

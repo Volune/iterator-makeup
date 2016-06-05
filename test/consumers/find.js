@@ -1,5 +1,5 @@
 import expect from 'must';
-import find from '../../lib/iterator/find';
+import find from '../../lib/consumers/find';
 import {
   shouldPassUsualArgumentsTo,
 } from '../helpers';

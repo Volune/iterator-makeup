@@ -1,5 +1,5 @@
 import expect from 'must';
-import tap from '../../lib/iterator/tap';
+import tap from '../../lib/transformers/tap';
 import {
   consume,
   shouldNotCall,

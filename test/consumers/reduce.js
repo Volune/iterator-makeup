@@ -1,5 +1,5 @@
 import expect from 'must';
-import reduce from '../../lib/iterator/reduce';
+import reduce from '../../lib/consumers/reduce';
 
 const INIT_VALUE = 'INIT_VALUE';
 const RETURNED_VALUE = 'RETURNED_VALUE';

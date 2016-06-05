@@ -1,5 +1,5 @@
 import expect from 'must';
-import rejectRepetitions from '../../lib/iterator/rejectRepetitions';
+import rejectRepetitions from '../../lib/transformers/rejectRepetitions';
 import {
   shouldReturnIterable,
 } from '../helpers';

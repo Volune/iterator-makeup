@@ -1,5 +1,5 @@
 import expect from 'must';
-import compact from '../../lib/iterator/compact';
+import compact from '../../lib/transformers/compact';
 import {
   shouldReturnIterable,
 } from '../helpers';

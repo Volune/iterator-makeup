@@ -1,5 +1,5 @@
 import expect from 'must';
-import flatten from '../../lib/iterator/flatten';
+import flatten from '../../lib/transformers/flatten';
 import {
   shouldReturnIterable,
 } from '../helpers';

@@ -1,5 +1,5 @@
 import expect from 'must';
-import take from '../../lib/iterator/take';
+import take from '../../lib/transformers/take';
 import {
   shouldReturnIterable,
 } from '../helpers';

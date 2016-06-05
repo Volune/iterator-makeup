@@ -1,5 +1,5 @@
 import expect from 'must';
-import count from '../../lib/iterator/count';
+import count from '../../lib/consumers/count';
 
 describe('count', () => {
   it('returns expected value from [1,2,3]', () => {

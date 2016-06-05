@@ -1,5 +1,5 @@
 import expect from 'must';
-import forEach from '../../lib/iterator/forEach';
+import forEach from '../../lib/consumers/forEach';
 import {
   returnTrue,
   shouldPassUsualArgumentsTo,

@@ -1,5 +1,5 @@
 import expect from 'must';
-import filter from '../../lib/iterator/filter';
+import filter from '../../lib/transformers/filter';
 import {
   shouldNotCall,
   shouldPassUsualArgumentsTo,

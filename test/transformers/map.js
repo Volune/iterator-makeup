@@ -1,5 +1,5 @@
 import expect from 'must';
-import map from '../../lib/iterator/map';
+import map from '../../lib/transformers/map';
 import {
   returnTrue,
   shouldNotCall,

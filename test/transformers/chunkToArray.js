@@ -1,5 +1,5 @@
 import expect from 'must';
-import chunkToArrays from '../../lib/iterator/chunkToArrays';
+import chunkToArrays from '../../lib/transformers/chunkToArrays';
 import {
   shouldReturnIterable,
 } from '../helpers';

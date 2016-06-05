@@ -34,11 +34,11 @@ export function shouldPassUsualArgumentsTo(name) {
   });
 }
 
-export function shouldReturnIterable() {
+export function shouldReturnIterable(firstArg = returnTrue, ...args) {
   const func = this;
   it('returns iterable', () => {
     const array = ['A', '1', 'B'];
-    const result = array::func(returnTrue);
+    const result = array::func(firstArg, ...args);
     expect(isIterableButNotString(result)).to.be.true();
   });
 }

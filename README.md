@@ -1,4 +1,6 @@
-# iterator-mackup
+# iterator-makeup
+
+[![Build Status](https://travis-ci.org/Volune/iterator-makeup.svg?branch=master)](https://travis-ci.org/Volune/iterator-makeup)
 
 "iterator-makeup" is a javascript library providing utility functions to work with iterators.
 
@@ -7,8 +9,18 @@
 ## Examples
 
 ```
-anArray::valuesReverse()::filter(Boolean)::map(item => item.name)::toArray()
+anArray::valuesRight()::filter(Boolean)::map(item => item.name)::toArray()
 ```
+
+## TODO
+
+- Generate distribuable files
+- Documentation (and find some good doc generator)
+- Missing tests
+- Iterable mirroring without buffer
+- More tests in non-ES6 environments with missing polyfills
+- Any missing useful functions
+- Check compatibility for conversion to streams (Node streams, RxJS)
 
 ## License
 
